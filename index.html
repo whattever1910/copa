@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo 2026 - Convocações e Bolão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Copa 2026">
+                <span>Copa 2026</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#convocacoes">Convocações</a></li>
+                <li><a href="#bolao">Bolão</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrossel -->
+        <section id="home" class="hero">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/stadium1.jpg" alt="Estádio Copa 2026">
+                        <div class="carousel-caption">
+                            <h1>Rumo à Copa 2026</h1>
+                            <p>Acompanhe as convocações oficiais das seleções.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/mbappe.jpg" alt="Kylian Mbappé">
+                        <div class="carousel-caption">
+                            <h1>Estrelas Confirmadas</h1>
+                            <p>Mbappé lidera a França em busca do tricampeonato.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/stadium2.webp" alt="Estádio México">
+                        <div class="carousel-caption">
+                            <h1>Sedes Históricas</h1>
+                            <p>EUA, Canadá e México recebem o maior espetáculo da Terra.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Convocações -->
+        <section id="convocacoes" class="section">
+            <h2 class="section-title">Convocações Oficiais (Verificadas)</h2>
+            <div class="squads-container">
+                <!-- França -->
+                <div class="squad-card">
+                    <div class="squad-header">
+                        <img src="images/france_squad.jpg" alt="Seleção da França">
+                        <h3>França 🇫🇷</h3>
+                    </div>
+                    <div class="squad-content">
+                        <p><strong>Destaques:</strong> Kylian Mbappé, Antoine Griezmann, William Saliba.</p>
+                        <button class="btn-details" onclick="toggleSquad('france-list')">Ver Lista Completa</button>
+                        <div id="france-list" class="squad-list hidden">
+                            <ul>
+                                <li><strong>Goleiros:</strong> Maignan, Samba, Risser.</li>
+                                <li><strong>Defensores:</strong> Digne, Gusto, L. Hernandez, T. Hernandez, Konaté, Koundé, Lacroix, Saliba.</li>
+                                <li><strong>Meias:</strong> Kanté, Koné, Rabiot, Tchouaméni, Zaïre-Emery.</li>
+                                <li><strong>Atacantes:</strong> Barcola, Coman, Dembélé, Griezmann, Kolo Muani, Mbappé, Nkunku, Olise, Thuram, Mateta.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bélgica -->
+                <div class="squad-card">
+                    <div class="squad-header">
+                        <img src="images/belgium_squad.jpg" alt="Seleção da Bélgica">
+                        <h3>Bélgica 🇧🇪</h3>
+                    </div>
+                    <div class="squad-content">
+                        <p><strong>Destaques:</strong> Kevin De Bruyne, Romelu Lukaku, Thibaut Courtois.</p>
+                        <button class="btn-details" onclick="toggleSquad('belgium-list')">Ver Lista Completa</button>
+                        <div id="belgium-list" class="squad-list hidden">
+                            <ul>
+                                <li><strong>Goleiros:</strong> Courtois, Lammens, Penders.</li>
+                                <li><strong>Defensores:</strong> Castagne, Debast, De Cuyper, De Winter, Mechele, Meunier, Ngoy, Seys, Theate.</li>
+                                <li><strong>Meias:</strong> De Bruyne, Onana, Raskin, Tielemans, Vanaken, Witsel.</li>
+                                <li><strong>Atacantes:</strong> De Ketelaere, Doku, Fernandez-Pardo, Lukaku, Lukebakio, Moreira, Saelemaekers, Trossard.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Japão -->
+                <div class="squad-card">
+                    <div class="squad-header">
+                        <img src="images/japan_squad.png" alt="Seleção do Japão">
+                        <h3>Japão 🇯🇵</h3>
+                    </div>
+                    <div class="squad-content">
+                        <p><strong>Destaques:</strong> Takefusa Kubo, Wataru Endo, Takehiro Tomiyasu.</p>
+                        <button class="btn-details" onclick="toggleSquad('japan-list')">Ver Lista Completa</button>
+                        <div id="japan-list" class="squad-list hidden">
+                            <ul>
+                                <li><strong>Goleiros:</strong> Suzuki, Osako, Hayakawa.</li>
+                                <li><strong>Defensores:</strong> Ito, Suzuki, Seko, Taniguchi, Watanabe, Tomiyasu, Itakura, Sugawara, Nagatomo.</li>
+                                <li><strong>Meias:</strong> Endo, Ito, Kamada, Doan, Tanaka, Nakamura, Sano, Kubo.</li>
+                                <li><strong>Atacantes:</strong> Ogawa, Maeda, Ueda, Suzuki, Shiogai, Goto.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="info-note">* A convocação do Brasil está prevista para ser anunciada hoje, 18 de maio.</p>
+        </section>
+
+        <!-- Bolão -->
+        <section id="bolao" class="section bg-light">
+            <h2 class="section-title">Bolão da Copa</h2>
+            <div class="betting-container">
+                <form id="betting-form">
+                    <div class="match-bet">
+                        <div class="team">
+                            <span>Brasil</span>
+                            <img src="https://flagcdn.com/w40/br.png" alt="Brasil">
+                        </div>
+                        <input type="number" min="0" placeholder="0" required>
+                        <span>X</span>
+                        <input type="number" min="0" placeholder="0" required>
+                        <div class="team">
+                            <img src="https://flagcdn.com/w40/fr.png" alt="França">
+                            <span>França</span>
+                        </div>
+                    </div>
+                    <div class="match-bet">
+                        <div class="team">
+                            <span>Argentina</span>
+                            <img src="https://flagcdn.com/w40/ar.png" alt="Argentina">
+                        </div>
+                        <input type="number" min="0" placeholder="0" required>
+                        <span>X</span>
+                        <input type="number" min="0" placeholder="0" required>
+                        <div class="team">
+                            <img src="https://flagcdn.com/w40/be.png" alt="Bélgica">
+                            <span>Bélgica</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Palpites</button>
+                </form>
+                <div id="bet-result" class="hidden">
+                    <p>Palpites enviados com sucesso! Boa sorte!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Copa do Mundo Fan Site. Informações oficiais verificadas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
