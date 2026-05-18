@@ -46,23 +46,7 @@ function toggleSquad(id) {
     }
 }
 
-// Formulário de Bolão
-const bettingForm = document.getElementById('betting-form');
-const betResult = document.getElementById('bet-result');
 
-bettingForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Simulação de envio
-    bettingForm.style.display = 'none';
-    betResult.classList.remove('hidden');
-    
-    // Opcional: Salvar no localStorage para persistência local
-    const bets = [];
-    const inputs = bettingForm.querySelectorAll('input');
-    inputs.forEach(input => bets.push(input.value));
-    localStorage.setItem('meuBolao2026', JSON.stringify(bets));
-});
 
 // Smooth Scroll para links do menu
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

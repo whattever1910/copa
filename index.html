@@ -11,8 +11,8 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="https://forum.lolesporte.com/images/theme_17/logo.png" alt="Logo Copa 2026">
-                <span>LOLESPORTE: Copa 2026</span>
+                <img src="images/logo.png" alt="Logo Copa 2026">
+                <span>Copa 2026</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
@@ -129,38 +129,78 @@
         <section id="bolao" class="section bg-light">
             <h2 class="section-title">Bolão da Copa</h2>
             <div class="betting-container">
-                <form id="betting-form">
-                    <div class="match-bet">
-                        <div class="team">
-                            <span>Brasil</span>
-                            <img src="https://flagcdn.com/w40/br.png" alt="Brasil">
-                        </div>
-                        <input type="number" min="0" placeholder="0" required>
-                        <span>X</span>
-                        <input type="number" min="0" placeholder="0" required>
-                        <div class="team">
-                            <img src="https://flagcdn.com/w40/fr.png" alt="França">
-                            <span>França</span>
-                        </div>
-                    </div>
-                    <div class="match-bet">
-                        <div class="team">
-                            <span>Argentina</span>
-                            <img src="https://flagcdn.com/w40/ar.png" alt="Argentina">
-                        </div>
-                        <input type="number" min="0" placeholder="0" required>
-                        <span>X</span>
-                        <input type="number" min="0" placeholder="0" required>
-                        <div class="team">
-                            <img src="https://flagcdn.com/w40/be.png" alt="Bélgica">
-                            <span>Bélgica</span>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn-submit">Enviar Palpites</button>
-                </form>
-                <div id="bet-result" class="hidden">
-                    <p>Palpites enviados com sucesso! Boa sorte!</p>
-                </div>
+                <table class="leaderboard">
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Participante</th>
+                            <th>Pontos</th>
+                            <th>Acertos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="first-place">
+                            <td>🥇 1º</td>
+                            <td>João Silva</td>
+                            <td>145</td>
+                            <td>18</td>
+                        </tr>
+                        <tr class="second-place">
+                            <td>🥈 2º</td>
+                            <td>Maria Santos</td>
+                            <td>138</td>
+                            <td>17</td>
+                        </tr>
+                        <tr class="third-place">
+                            <td>🥉 3º</td>
+                            <td>Carlos Oliveira</td>
+                            <td>132</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>4º</td>
+                            <td>Ana Costa</td>
+                            <td>128</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>5º</td>
+                            <td>Pedro Ferreira</td>
+                            <td>125</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>6º</td>
+                            <td>Juliana Rocha</td>
+                            <td>118</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>7º</td>
+                            <td>Lucas Martins</td>
+                            <td>112</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>8º</td>
+                            <td>Fernanda Lima</td>
+                            <td>108</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>9º</td>
+                            <td>Roberto Alves</td>
+                            <td>102</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>10º</td>
+                            <td>Beatriz Gomes</td>
+                            <td>98</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
